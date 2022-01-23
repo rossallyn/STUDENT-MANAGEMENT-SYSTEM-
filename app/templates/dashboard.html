@@ -264,6 +264,10 @@ $(document).ready(function(){
 	</tr>
    </thead>
 	{% for student in students %}
+	<div class="image-box">
+		<img src="{{student[0]}}" alt="" class="student_image" id="profile-image" name="profile-image">
+		 <img src="{{student[0]}}" alt="" class="small-student_image" id="small-profile-image" name="profile-image">
+	 </div>
    <tbody>
 	<tr>
 	 <td>{{student[1]}}</td>
@@ -272,10 +276,6 @@ $(document).ready(function(){
 	 <td>{{student[4]}}</td>
 	 <td>{{student[5]}}</td>
 	 <td>{{student[6]}}</td>
-		<div class="image-box">
-			<img src="{{student[0]}}" alt="" class="student_image" id="profile-image" name="profile-image">
-			 <img src="{{student[0]}}" alt="" class="small-student_image" id="small-profile-image" name="profile-image">
-		 </div>
 	 <td>
 	  <a href="edit_student/{{student[0]}}" class="edit" title="Edit" style="color:green;" data-toggle="modal" data-target="#modaledit{{student[0]}}" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
 	  <a href="delete_student/{{student[0]}}" class="delete" title="Delete" style="color:red;" data-target="StudentForm" onclick="return confirm('Are you sure to delete student?')" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>

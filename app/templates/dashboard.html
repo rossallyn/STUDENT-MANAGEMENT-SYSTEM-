@@ -225,8 +225,6 @@ $(document).ready(function(){
   <div class="col-sm-6">
    <a href="/add_student" class="btn btn-success" data-toggle="modal" data-target="#modaladd">Add New Student<i class="material-icons">&#xE147;</i></a>
   </div>
-
-
 <div class="container-xl">
 <div class="table-responsive">
  <div class="table-wrapper">
@@ -327,6 +325,14 @@ $(document).ready(function(){
 		  <label>Year Level:</label>		 
 		  <input type="text" class="form-control" name="year" value="{{student[5]}}">
 		 </div>
+
+		 <div class="form-group" style="position:absolute; top:250px; left:150px; width:500px;">
+			<label style="color:black; font-weight:bold;">Select Student Image</label>
+			<div class="custom-file">
+				<input type="file" class="custom-file-input" name="image" id="image" style="color:black;">
+			</div>
+	   </div>
+
 		 <div class="form-group">
 		  <label>Course:</label>
 		   <div class="input-group mb-3" > 

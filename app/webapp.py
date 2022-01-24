@@ -7,6 +7,7 @@ from functools import wraps
 import app.s_db as s_db
 import cloudinary
 import cloudinary.uploader
+from cloudinary.utils import cloudinary_url
 
 home = Blueprint('home', __name__)
 program = Blueprint('program', __name__)
@@ -121,8 +122,9 @@ def dashboard():
                     newdata.append (y)
                     break
         data = newdata
-    return render_template('dashboard.html', students=data,college=s_db.read("asasdsda"),course=s_db.read("crs"))
-
+    return render_template('dashboard.html', students=data,college=s_db.read("asasdsda"),
+                            course=s_db.read("crs"),
+                            cloudinary_url=cloudinary_url)
 
 
 # Edit Student
@@ -137,14 +139,14 @@ def edit_student():
        lastname = request.form['lastname']
        year = request.form['year']
        course = request.form.get('courses')
-       image = request.files["image"]
+       image = request.files["photo"]
        print(image)
 
        result = cloudinary.uploader.upload(image)
-       url = result.get("url")
-       print(url)
+       photo = result.get("public_id")
+       print(photo)
 
-       tuples=(Id,idno,firstname,lastname,gender,year,course,Id)
+       tuples=(Id,idno,firstname,lastname,gender,year,course,photo,Id)
        s_db.edit(tuples)
    return redirect(url_for('student.dashboard'))
 

@@ -139,14 +139,14 @@ def edit_student():
        lastname = request.form['lastname']
        year = request.form['year']
        course = request.form.get('courses')
-       image = request.files["photo"]
+       image = request.files["image"]
        print(image)
 
        result = cloudinary.uploader.upload(image)
        photo = result.get("public_id")
        print(photo)
 
-       tuples=(Id,idno,firstname,lastname,gender,year,course,photo,Id)
+       tuples=(Id,idno,firstname,lastname,gender,year,course,Id)
        s_db.edit(tuples)
    return redirect(url_for('student.dashboard'))
 
@@ -163,12 +163,16 @@ def add_student():
    if request.method == 'POST':
        flash('Student Data Created', 'success')
        idno = request.form['idno']
+       photo = request.files.get('photo')
        firstname = request.form['firstname']
        lastname = request.form['lastname']
        gender = request.form['gender']
        year = request.form['year']
        course = request.form['courses']
-       tuples=(idno,firstname,lastname,gender,year,course)
+       result = cloudinary.uploader.upload(photo)
+       image = result.get("public_id")
+       print(photo)
+       tuples=(idno,firstname,lastname,gender,year,course,image)
        print(tuples)
        s_db.addStudent(tuples)
    return redirect(url_for('student.dashboard'))

@@ -377,7 +377,7 @@ $(document).ready(function(){
 	  <button type="button" class="close" data-dismiss="modal">&times;</button>
 	 </div>
 	 <div class="modal-body">
-	  <form action="{{url_for('student.add_student')}}" method="POST">
+	  <form action="{{url_for('student.add_student')}}" enctype="multipart/form-data" method="POST">
 	   <div class="form-group">
 		<label>ID No:</label>
 		<input type="text" class="form-control" name="idno">

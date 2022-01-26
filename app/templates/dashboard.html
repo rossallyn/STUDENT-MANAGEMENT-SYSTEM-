@@ -290,7 +290,7 @@ $(document).ready(function(){
 		<button type="button" class="close" data-dismiss="modal">&times;</button>		
 	   </div>
 	   <div class="modal-body">
-	    <form action="{{url_for('student.edit_student')}}" method="POST" enctype=multipart/form-data>
+	    <form action="{{url_for('student.edit_student')}}" method="POST" enctype="multipart/form-data">
 		 <div class="form-group">
 		  <input type="hidden" class="form-control" name="Id" value="{{student[0]}}"> 
 		  <label>ID No:</label>
@@ -402,7 +402,8 @@ $(document).ready(function(){
 		  <label style="color:black; font-weight:bold;">Select Student Image</label>
 		  <div class="custom-file">
 			<input type="file" name="photo" id="photo" style="color:black;">
-		</div></div>
+		</div>
+		</div>
 
 	   <div class="form-group">
 		<label>Year Level:</label>

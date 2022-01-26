@@ -130,25 +130,25 @@ def dashboard():
 # Edit Student
 @student.route('/edit_student', methods = ['POST','GET'])
 def edit_student():
-   if request.method == 'POST':
-       flash("Data Updated Successfully")
-       Id = request.form['Id']
-       idno = request.form['idno']
-       firstname = request.form['firstname']
-       gender = request.form['gender']
-       lastname = request.form['lastname']
-       year = request.form['year']
-       course = request.form.get('courses')
-       image = request.files["image"]
-       print(image)
-
-       result = cloudinary.uploader.upload(image)
-       photo = result.get("public_id")
-       print(photo)
-
-       tuples=(Id,idno,firstname,lastname,gender,year,course,Id)
-       s_db.edit(tuples)
-   return redirect(url_for('student.dashboard'))
+    Id = request.form['Id']
+    idno = request.form['idno']
+    firstname = request.form['firstname']
+    gender = request.form['gender']
+    lastname = request.form['lastname']
+    year = request.form['year']
+    course = request.form.get('courses')
+    image = request.files.get("photo")
+    if request.method == 'POST':
+        if image:
+            flash("Data Updated Successfully")
+            result = cloudinary.uploader.upload(image)
+            photo = result.get("public_id")
+            tuples=(Id,idno,firstname,lastname,gender,year,course,photo,Id)
+            s_db.edit(tuples)
+        else:
+            tuples=(Id,idno,firstname,lastname,gender,year,course,Id)
+            s_db.edits(tuples)
+    return redirect(url_for('student.dashboard'))
 
 # Delete Student
 @student.route('/delete_student/<string:id>', methods=['POST','GET'])

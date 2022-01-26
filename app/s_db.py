@@ -37,12 +37,14 @@ def delete(id):
     mysql.commit()
 
 def edit(tuples):
-    cur.execute("UPDATE students SET id=%s, idno=%s, firstname=%s, lastname=%s, gender=%s, year=%s, course=%s, photo=%s, where id=%s",tuples)
+    cur.execute("UPDATE students SET id=%s, idno=%s, firstname=%s, lastname=%s, gender=%s, year=%s, course=%s, photo=%s where id=%s",tuples)
+    mysql.commit()
+
+def edits(tuples):
+    cur.execute("UPDATE students SET id=%s, idno=%s, firstname=%s, lastname=%s, gender=%s, year=%s, course=%s where id=%s",tuples)
     mysql.commit()
 
 def addStudent(tuples):
-    for i in tuples:
-        print(i)
     cur.execute("INSERT INTO students(idno, firstname, lastname, gender, year, course, photo) VALUES(%s, %s, %s, %s, %s, %s, %s)",tuples)
     mysql.commit()
 

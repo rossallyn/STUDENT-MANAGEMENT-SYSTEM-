@@ -202,8 +202,7 @@ $(document).ready(function(){
   <table class="table table-striped table-hover">
    <thead>
 	<tr>
-	 <th>College Code</th>
-	 <th>College Name</th> 
+	 <th>College</th>
 	 <th>Course Code</th>    
 	 <th>Course Name</th>  											
 	 <th>Action</th>
@@ -213,9 +212,8 @@ $(document).ready(function(){
    <tbody>
 	<tr>
 	 <td><b>{{courses[2]}}</b></td>
-	 <td>{{courses[3]}}</td> 
-	 <td style="width: 150px"><b>{{courses[0]}}</b></td>   
-	 <td style="width: -100px">{{courses[1]}}</td>                 
+	 <td><b>{{courses[0]}}</b></td>   
+	 <td>{{courses[1]}}</td>                 
 	 <td>
 	  <a href="edit_courses/{{courses[0]}}" class="settings" title="Settings" data-toggle="modal" data-target="#modaleditCourse{{courses[0]}}" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>
 	  <a href="delete_courses/{{courses[0]}}" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Are you sure to delete course?')"><i class="material-icons">&#xE5C9;</i></a>
@@ -243,6 +241,17 @@ $(document).ready(function(){
 		  <label>Course Name:</label>
 		  <input type="text" class="form-control" name="course_name" value="{{courses[1]}}">
 		 </div>
+		 <div class="form-group">
+			<label>College:</label>
+			 <div class="input-group mb-3" >
+			  <select class="form-control custom-select" name="college" required>
+			   <option disabled="" selected=""><small>Select a College</small></option>
+			   {% for colleges in college %}
+				  <option>{{colleges.0}}</option>
+			   {% endfor %}
+			  </select>
+			 </div>
+		   </div>
 		 <div class="form-group">
 		  <button type="submit" class="btn btn-primary">Update</button>
 		 </div>
@@ -285,7 +294,7 @@ $(document).ready(function(){
 		  <select class="form-control custom-select" name="college" required>
 		   <option disabled="" selected=""><small>Select a College</small></option>
 		   {% for colleges in college %}
-			  <option>{{colleges.1}}</option>
+			  <option>{{colleges.0}}</option>
 		   {% endfor %}
 		  </select>
 		 </div>

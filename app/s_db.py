@@ -87,9 +87,9 @@ def deleteCourse(course_code):
     mysql.commit()
 
 def editCourse(tuples):
-    cur.execute("UPDATE course SET course_code=%s, course_name=%s, college_code=%s, where course_code=%s",tuples)
+    cur.execute("UPDATE course SET course_code=%s, course_name=%s, coll_code=%s where course_code=%s",tuples)
     mysql.commit()
 
 def addCourse(tuples):
-    cur.execute("INSERT INTO course(course_code,course_name,college_code) VALUES(%s, %s, %s)",tuples)
+    cur.execute("INSERT INTO course(course_code,course_name,coll_code) VALUES(%s, %s, %s)",tuples)
     mysql.commit()

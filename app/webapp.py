@@ -255,10 +255,8 @@ def edit_courses():
        course_code_old = request.form['course_code_old']
        course_code = request.form['course_code']
        course_name = request.form['course_name']
-       college_code = request.form.get('college_code')
-       s_db.cur.execute("select * from college where college_code = %s")
-       college_code=s_db.cur.fetchall()
-       tuples=(course_code,course_name,college_code[0][0],course_code_old)
+       college_code = request.form.get('college')
+       tuples=(course_code,course_name,college_code,course_code_old)
        s_db.editCourse(tuples)
    return redirect(url_for('course.courses'))
 
@@ -269,10 +267,8 @@ def add_courses():
        flash('Course Data Created', 'success')
        course_code = request.form['course_code']
        course_name = request.form['course_name']
-       college_code = request.form.get('college_code')
-       s_db.cur.execute("select * from college where college_code = %s",)
-       college_code=s_db.cur.fetchall()
-       tuples=(course_code,course_name,college_code[0][0])
+       college_code = request.form.get('college')
+       tuples=(course_code,course_name,college_code)
        s_db.addCourse(tuples)
    return redirect(url_for('course.courses'))
 

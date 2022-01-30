@@ -16,8 +16,8 @@ Built with: Python Flask, Python Libraries: flask, FLASK-WTF,MySQL,HTML,CSS,Clou
 
 SSIS
 
-Dashboard
+***Dashboard***
 <div class="carousel-item">
-						<img src="{{url_for('static', filename = 'dashboard.png')}}" class="img-fluid" alt="Tablet">
+						<img src="{{url_for('static', filename = 'dashboard.png')}}">
 					</div>
 

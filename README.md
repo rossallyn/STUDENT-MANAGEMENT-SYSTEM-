@@ -19,11 +19,12 @@ Modules Installed:
 - [ **pip install mysqldb** ] 
 - [ **pip install WTForms** ] 
 - [ **pip install passlib** ]
-SSIS
 
-## Student Cloud
+
+## SSIS
+
 <br />**Dashboard**
-![2](dashboard.jpg)
+![2](file:///C:/Users/ACER/Documents/GitHub/STUDENT-MANAGEMENT-SYSTEM-/app/static/college.png)
 
 <br />**Course Table**
 ![3](course.jpg)

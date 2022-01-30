@@ -24,10 +24,10 @@ Modules Installed:
 ## SSIS
 
 <br />**Dashboard**
-![2](file:///C:/Users/ACER/Documents/GitHub/STUDENT-MANAGEMENT-SYSTEM-/app/static/college.png)
+![](file:///C:/Users/ACER/Documents/GitHub/STUDENT-MANAGEMENT-SYSTEM-/app/static/college.png)
 
 <br />**Course Table**
-![3](course.jpg)
+![](course.jpg)
 
 <br />**College Table**
-![4](college.jpg)
+![](college.jpg)

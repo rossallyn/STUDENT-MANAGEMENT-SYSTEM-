@@ -24,10 +24,10 @@ Modules Installed:
 ## SSIS
 
 <br />**Dashboard**
-![1](<img src="/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/dashboard.png?raw=true" alt="dashboard.png">)
+![1](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/dashboard.png?raw=true)
 
 <br />**Course Table**
-![2](https://user-images.githubusercontent.com/60618940/99182919-25924f80-2773-11eb-8cbb-949a6818914e.jpg)
+![2]()
 
 <br />**College Table**
-![3](https://user-images.githubusercontent.com/60618940/99182953-5a060b80-2773-11eb-8321-25746b05ba8f.jpg)
+![3])

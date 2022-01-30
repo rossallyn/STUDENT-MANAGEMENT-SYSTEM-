@@ -29,7 +29,7 @@ Modules Installed:
 <br />**LogIn**
 ![2](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/login.png?raw=true)
 
-<br />**Dashboard**
+<br />**Dashboard/ Student Table**
 ![3](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/dashboard.png?raw=true)
 
 <br />**Course Table**

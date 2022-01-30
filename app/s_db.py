@@ -1,4 +1,4 @@
-import mysql.connector
+import mysql.connector 
 
 mysql=mysql.connector.connect(host="localhost",user="root",password="root",db ="student_db")
 cur=mysql.cursor()

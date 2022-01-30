@@ -19,12 +19,14 @@ Modules Installed:
 - [ **pip install mysqldb** ] 
 - [ **pip install WTForms** ] 
 - [ **pip install passlib** ]
+- [ **pip install cloudinary** ]
 
 
 ## SSIS(Features)
 <br />**Home**
 ![1](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/home.png?raw=true)
-<br />***LogIn***
+
+<br />**LogIn**
 ![2](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/login.png?raw=true)
 
 <br />**Dashboard**
@@ -35,9 +37,3 @@ Modules Installed:
 
 <br />**College Table**
 ![5](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/college.png?raw=true)
-
-## SSIS (Additonal Features)
-<br />**Programs Offered Page (Colleges,Courses)**
-![6](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/programoffered.png?raw=true)
-<br />
-![7](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/collegelist.png?raw=true)

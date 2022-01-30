@@ -21,16 +21,23 @@ Modules Installed:
 - [ **pip install passlib** ]
 
 
-## SSIS
-
+## SSIS(Features)
 <br />**Home**
-![1](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/login.png?raw=true)
+![1](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/home.png?raw=true)
+<br />***LogIn***
+![2](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/login.png?raw=true)
 
 <br />**Dashboard**
-![2](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/dashboard.png?raw=true)
+![3](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/dashboard.png?raw=true)
 
 <br />**Course Table**
-![3](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/course.png?raw=true)
+![4](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/course.png?raw=true)
 
 <br />**College Table**
-![4](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/college.png?raw=true)
+![5](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/college.png?raw=true)
+
+## SSIS (Additonal Features)
+<br />**Programs Offered Page (Colleges,Courses)**
+![6](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/programoffered.png?raw=true)
+<br />
+![7](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/collegelist.png?raw=true)

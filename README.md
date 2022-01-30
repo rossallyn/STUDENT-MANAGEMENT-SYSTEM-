@@ -29,4 +29,4 @@ SSIS
 ![3](course.jpg)
 
 <br />**College Table**
-![4](https://user-images.githubusercontent.com/60618940/99182953-5a060b80-2773-11eb-8321-25746b05ba8f.jpg)
+![4](college.jpg)

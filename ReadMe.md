@@ -24,7 +24,8 @@ Modules Installed:
 ## SSIS
 
 <br />**LogIn**
-![1]()
+![1](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/login.png?raw=true)
+
 <br />**Dashboard**
 ![2](https://github.com/rossallyn/STUDENT-MANAGEMENT-SYSTEM-/blob/main/app/static/dashboard.png?raw=true)
 

@@ -3,12 +3,21 @@
 
 About Student Management
 (Student Database Management Web Application)
-A simple student database management web application that will help you manage to your students information.
+A basic student database administration web application that will assist you in managing the information of your students.
 
 **Features:** 
-1. Add Students, Courses, & Colleges. 
+1. Add Students Photo, Courses, & Colleges. 
 2. Searches Students, Courses, & Colleges.
 3. Delete Student Info, Courses, & Colleges.
 4. Update Student Info, Courses,& Colleges. 
-5. List all Students, Courses,& Colleges.
+5. View all Students, Courses,& Colleges.
+
+Built with: Python Flask, Python Libraries: flask, FLASK-WTF,MySQL,HTML,CSS,Cloudinary
+
+SSIS
+
+Dashboard
+<div class="carousel-item">
+						<img src="{{url_for('static', filename = 'dashboard.png')}}" class="img-fluid" alt="Tablet">
+					</div>
 

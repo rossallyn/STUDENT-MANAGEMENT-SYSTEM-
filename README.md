@@ -12,12 +12,21 @@ A basic student database administration web application that will assist you in 
 4. Update Student Info, Courses,& Colleges. 
 5. View all Students, Courses,& Colleges.
 
-Built with: Python Flask, Python Libraries: flask, FLASK-WTF,MySQL,HTML,CSS,Cloudinary
+Built with: **Python Flask, Python Libraries: flask, FLASK-WTF,MySQL,HTML,CSS,Cloudinary**
 
+Modules Installed:
+- [ **pip install flask** ] 
+- [ **pip install mysqldb** ] 
+- [ **pip install WTForms** ] 
+- [ **pip install passlib** ]
 SSIS
 
-***Dashboard***
-<div class="carousel-item">
-						<img src="{{url_for('static', filename = 'dashboard.png')}}">
-					</div>
+## Student Cloud
+<br />**Dashboard**
+![2](dashboard.jpg)
 
+<br />**Course Table**
+![3](course.jpg)
+
+<br />**College Table**
+![4](https://user-images.githubusercontent.com/60618940/99182953-5a060b80-2773-11eb-8321-25746b05ba8f.jpg)

@@ -219,8 +219,6 @@ def add_college():
        s_db.addCollege(tuples)
    return redirect(url_for('college.colleges'))
 
-# Departments/Search
-# Delete Departments
 
 # Courses/Search
 @course.route('/courses')
@@ -257,7 +255,7 @@ def edit_courses():
        s_db.editCourse(tuples)
    return redirect(url_for('course.courses'))
 
-# Add Departments
+
 @course.route('/add_courses', methods=['POST','GET'])
 def add_courses():
    if request.method == 'POST':

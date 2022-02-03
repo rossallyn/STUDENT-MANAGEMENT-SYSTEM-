@@ -1,5 +1,4 @@
-from flask import Flask, render_template, flash, redirect, url_for, session, request, logging, Blueprint
-#from . import app
+from flask import Flask, render_template, flash, redirect, url_for, session, request, Blueprint
 from flask_mysqldb import MySQL
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators, SelectField
 from passlib.hash import sha256_crypt
@@ -33,8 +32,6 @@ def programs():
 @program.route('/collegelist')
 def collegelist():
     return render_template('collegelist.html', college=s_db.collegelist("coll"),course=s_db.collegelist("crs"))
-
-# Department Page
 
 # Register Form Class
 class RegisterForm(Form):

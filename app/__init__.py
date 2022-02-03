@@ -9,14 +9,12 @@ mysql = MySQL()
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'SECRET_KEY'
-    app.config['MYSQL_HOST'] = "DB_HOST"
-    app.config['MYSQL_USER'] = "DB_USERNAME"
-    app.config['MYSQL_PASSWORD'] = "DB_PASSWORD"
-    app.config['MYSQL_DB'] = "DB_NAME"
-
-
-    
+    app.config['SECRET_KEY'] = getenv('SECRET_KEY')
+    app.config['MYSQL_HOST'] = getenv('DB_HOST')
+    app.config['MYSQL_USER'] = getenv('DB_USERNAME')
+    app.config['MYSQL_PASSWORD'] = getenv('DB_PASSWORD')
+    app.config['MYSQL_DB'] = getenv('DB_NAME')
+    mysql.init_app(app)
     cloudinary.config(
         cloud_name=CLOUD_NAME,
         api_key=API_KEY,
@@ -25,10 +23,8 @@ def create_app():
 
 
     if __name__ == '__main__':
-        app.secret_key = 'super secret key'
         app.run(debug=True)
 
-    mysql.init_app(app)
 
     from .webapp import home, program, student, college, course
 
